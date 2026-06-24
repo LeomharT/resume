@@ -1,14 +1,15 @@
 import { ContactShadows } from "@react-three/drei";
 import Lights from "./Lights";
 import Paper from "./Paper";
-import TestScene from "./test";
+import TitleBox from "./TitleBox";
 
 export default function World() {
   return (
     <>
       <axesHelper args={[3]} castShadow={false} />
       <Lights />
-      <TestScene />
+      {/* <GoldBall /> */}
+      <TitleBox />
       <Paper />
       <ContactShadows
         frames={1}

@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     hmr: true,
+    host: true,
   },
   resolve: {
     alias: {

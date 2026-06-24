@@ -48,6 +48,7 @@ export default function App() {
         }}
         gl={{
           toneMapping,
+          antialias: true,
         }}
         shadows="basic"
       >

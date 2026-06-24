@@ -26,7 +26,7 @@ export default function Paper() {
   return (
     <mesh scale-y={0.025} castShadow receiveShadow>
       <RoundedBoxGeometry
-        args={[10 * GOLDRATIO, 10, 10]}
+        args={[15 * GOLDRATIO, 15, 15]}
         radius={radius}
         steps={1}
         smoothness={16}
