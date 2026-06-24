@@ -18,7 +18,7 @@ export default function TitleBox() {
       },
       transmission: { value: 1, min: 0, max: 1 },
       roughness: { value: 0.0, min: 0, max: 1, step: 0.01 },
-      thickness: { value: 9.2, min: 0, max: 10, step: 0.01 },
+      thickness: { value: 3.0, min: 0, max: 10, step: 0.01 },
       ior: { value: 1.5 * 2, min: 1, max: 5, step: 0.01 },
       chromaticAberration: { value: 0.06, min: 0, max: 1 },
       anisotropy: { value: 0.1, min: 0, max: 1, step: 0.01 },
