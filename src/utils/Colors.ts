@@ -1,0 +1,5 @@
+export const COLORS = {
+  METALLIC_GOLD: "#D3AF37",
+  SILVER: "#C4C4C4",
+  PLATINUM: "#D9D9D9",
+};

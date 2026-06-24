@@ -1,26 +1,18 @@
-import { useFrame } from "@react-three/fiber";
+import { COLORS } from "@/utils/Colors";
 import { useRef } from "react";
 import type { Mesh } from "three";
-
-const radius = 3.0;
 
 export default function TestScene() {
   const boxRef = useRef<Mesh>(null);
 
-  useFrame((state) => {
-    const elapsed = state.clock.getElapsedTime();
-
-    boxRef.current?.position.set(
-      Math.cos(elapsed) * radius,
-      0,
-      Math.sin(elapsed) * radius,
-    );
-  });
-
   return (
-    <mesh ref={boxRef} position-z={-5}>
-      <icosahedronGeometry args={[0.1, 3]} />
-      <meshBasicMaterial color="yellow" />
+    <mesh ref={boxRef} receiveShadow castShadow position={[0, 0.8, 0]}>
+      <icosahedronGeometry args={[0.5, 20]} />
+      <meshStandardMaterial
+        color={COLORS.METALLIC_GOLD}
+        metalness={0.45}
+        roughness={0.1}
+      />
     </mesh>
   );
 }
