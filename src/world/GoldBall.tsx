@@ -5,13 +5,13 @@ export default function GoldBall() {
   const { metalness, roughness, color } = useControls({
     "🟡 Gold Ball": folder({
       metalness: {
-        value: 0.35,
+        value: 0.8,
         step: 0.01,
         min: 0,
         max: 1,
       },
       roughness: {
-        value: 0.4,
+        value: 0.36,
         step: 0.01,
         min: 0,
         max: 1,
@@ -21,7 +21,7 @@ export default function GoldBall() {
   });
 
   return (
-    <mesh receiveShadow castShadow position={[0, 0.8, 0]}>
+    <mesh receiveShadow castShadow position={[-1.5, 0.8, -5]}>
       <icosahedronGeometry args={[0.5, 20]} />
       <meshStandardMaterial
         color={color}

@@ -1,4 +1,5 @@
 import { ContactShadows } from "@react-three/drei";
+import GoldBall from "./GoldBall";
 import Lights from "./Lights";
 import Paper from "./Paper";
 import TitleBox from "./TitleBox";
@@ -8,7 +9,7 @@ export default function World() {
     <>
       <axesHelper args={[3]} castShadow={false} />
       <Lights />
-      {/* <GoldBall /> */}
+      <GoldBall />
       <TitleBox />
       <Paper />
       <ContactShadows
